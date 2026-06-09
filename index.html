@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DeadPixelLab 💀</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="#">Home 🏠</a>
+    <a href="#">About 🧠</a>
+    <a href="#">Skills ⚡</a>
+    <a href="#">Contact 📞</a>
+</nav>
+
+<h1>DeadPixelLab 💀</h1>
+<p>Welcome to my first ever web development journey 🚀</p>
+
+<hr>
+
+<!-- COUNTER APP -->
+<h2>Counter App ⚡</h2>
+
+<h1 id="count">0</h1>
+
+<button onclick="increase()">+ Increase</button>
+<button onclick="decrease()">- Decrease</button>
+
+<hr>
+
+<!-- TODO LIST -->
+<h2>To-Do List 📝</h2>
+
+<input type="text" id="taskInput" placeholder="Enter a task">
+
+<button onclick="addTask()">Add Task ➕</button>
+
+<ul id="taskList"></ul>
+
+<hr>
+
+<!-- OTHER BUTTONS -->
+<button onclick="toggleMode()">Dark Mode 🌙</button>
+<button onclick="sayHi()">JS Test 💀</button>
+<button onclick="goTop()">Explore 🚀</button>
+
+<hr>
+
+<h2>About Me 🧠</h2>
+<p>
+I am a beginner web developer currently learning HTML, CSS and JavaScript step by step.
+I started from zero and now I can build simple websites with interactive features.
+My goal is to become a full-stack web developer and create real-world projects.
+</p>
+
+<hr>
+
+<h2>What I Have Learned 📚</h2>
+<ul>
+    <li>HTML page structure</li>
+    <li>CSS styling and design</li>
+    <li>Navigation bars</li>
+    <li>Buttons and interactions</li>
+    <li>JavaScript basics</li>
+    <li>Dark mode toggle</li>
+    <li>Counter app</li>
+    <li>To-Do list app</li>
+</ul>
+
+<hr>
+
+<h2>Future Goals 🚀</h2>
+<ul>
+    <li>Learn advanced JavaScript</li>
+    <li>Build responsive websites</li>
+    <li>Create portfolio projects</li>
+    <li>Deploy websites online</li>
+    <li>Learn React and backend development</li>
+</ul>
+
+<hr>
+
+<h2>Contact 📞</h2>
+<p>Phone: COMING SOON</p>
+<p>Email: COMING SOON</p>
+
+<hr>
+
+<p>Made with ❤️ by DeadPixelLab 💀</p>
+
+<script>
+
+let count = 0;
+
+function increase() {
+    count++;
+    document.getElementById("count").innerText = count;
+}
+
+function decrease() {
+    count--;
+    document.getElementById("count").innerText = count;
+}
+
+function addTask() {
+
+    let task = document.getElementById("taskInput").value;
+
+    if (task === "") {
+        alert("Please enter a task!");
+        return;
+    }
+
+    let li = document.createElement("li");
+
+    li.innerHTML =
+        '<span onclick="this.classList.toggle(\'completed\')">' +
+        task +
+        '</span> ' +
+        '<button onclick="this.parentElement.remove()">❌</button>';
+
+    document.getElementById("taskList").appendChild(li);
+
+    document.getElementById("taskInput").value = "";
+}
+
+function toggleMode() {
+    document.body.classList.toggle("dark-mode");
+}
+
+function sayHi() {
+    alert("DeadPixelLab JS started 💀🔥");
+}
+
+function goTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+</script>
+
+</body>
+
+</html>
