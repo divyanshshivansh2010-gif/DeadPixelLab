@@ -150,7 +150,61 @@ function goTop() {
         behavior: "smooth"
     });
 }
+function play(userChoice) {
 
+    let choices = [
+        "rock",
+        "paper",
+        "scissors"
+    ];
+
+    let randomIndex =
+        Math.floor(Math.random() * 3);
+
+    let computerChoice =
+        choices[randomIndex];
+
+    if (userChoice === computerChoice) {
+
+        document.getElementById("result")
+        .innerText =
+        "🤝 Draw! Computer chose " +
+        computerChoice;
+
+    }
+
+    else if (
+        (userChoice === "rock" &&
+         computerChoice === "scissors")
+
+        ||
+
+        (userChoice === "paper" &&
+         computerChoice === "rock")
+
+        ||
+
+        (userChoice === "scissors" &&
+         computerChoice === "paper")
+    ) {
+
+        document.getElementById("result")
+        .innerText =
+        "🎉 You Win! Computer chose " +
+        computerChoice;
+
+    }
+
+    else {
+
+        document.getElementById("result")
+        .innerText =
+        "😈 Computer Wins! Computer chose " +
+        computerChoice;
+
+    }
+
+    }
 </script>
 
 </body>
