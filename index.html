@@ -2,64 +2,46 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>DeadPixelLab 💀</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeadPixelLab 💀</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <nav>
-    <a href="#">Home 🏠</a>
-    <a href="#">About 🧠</a>
-    <a href="#">Skills ⚡</a>
-    <a href="#">Contact 📞</a>
+<a href="#">Home 🏠</a>
+<a href="#">About 🧠</a>
+<a href="#">Skills ⚡</a>
+<a href="#">Projects 🚀</a>
+<a href="#">Contact 📞</a>
 </nav>
+
 <h1>DeadPixelLab 💀</h1>
-    <div class="hero-card">
 
-    <h2>💀 DeadPixelLab</h2>
+<div class="hero-card">
+<h2>💀 DeadPixelLab</h2>
 
-    <p>
-        Beginner Web Developer learning HTML,
-        CSS and JavaScript step by step.
-    </p>
-
+<p>
+Beginner Web Developer learning HTML, CSS and JavaScript step by step.
+</p>
 </div>
 
 <div class="hero-card">
+<h2>Developer Stats 📊</h2>
 
-    <h2>Developer Stats 📊</h2>
-
-    <p>Projects Completed: 4 ✅</p>
-
-    <p>Website Published: Yes 🌍</p>
-
-    <p>Current Level: Beginner Developer 🚀</p>
-
-    <p>Learning: HTML, CSS, JavaScript 💻</p>
-
+<p>Projects Completed: 5 ✅</p>
+<p>Website Published: Yes 🌍</p>
+<p>Current Level: Beginner Developer 🚀</p>
+<p>Learning: HTML, CSS, JavaScript 💻</p>
 </div>
 
 <p>Welcome to my first ever web development journey 🚀</p>
 
 <hr>
 
-<!-- COUNTER APP -->
 <h2>Counter App ⚡</h2>
-<hr>
 
-<h2>Rock Paper Scissors 🎮</h2>
-
-<button onclick="play('rock')">🪨 Rock</button>
-
-<button onclick="play('paper')">📄 Paper</button>
-
-<button onclick="play('scissors')">✂️ Scissors</button>
-
-<h3 id="result">Choose one!</h3>
 <h1 id="count">0</h1>
 
 <button onclick="increase()">+ Increase</button>
@@ -67,267 +49,246 @@
 
 <hr>
 
-<!-- TODO LIST -->
+<h2>Rock Paper Scissors 🎮</h2>
+
+<button onclick="play('rock')">🪨 Rock</button>
+<button onclick="play('paper')">📄 Paper</button>
+<button onclick="play('scissors')">✂️ Scissors</button>
+
+<h3 id="result">Choose one!</h3>
+
+<hr>
+
 <h2>To-Do List 📝</h2>
 
-<input type="text" id="taskInput" placeholder="Enter a task">
+<input
+type="text"
+id="taskInput"
+placeholder="Enter a task">
 
-<button onclick="addTask()">Add Task ➕</button>
+<button onclick="addTask()">
+Add Task ➕
+</button>
 
 <ul id="taskList"></ul>
 
-<hr>
+<hr><h2>Skills ⚡</h2>
 
-<!-- OTHER BUTTONS -->
-<button onclick="toggleMode()">Dark Mode 🌙</button>
-<button onclick="sayHi()">JS Test 💀</button>
-<button onclick="goTop()">Explore 🚀</button>
+<div class="project-card">
 
-<hr>
+<h3>HTML</h3>
+<progress value="80" max="100"></progress>
+<p>80%</p>
 
-<h2>About Me 🧠</h2>
-<p>
-I am a beginner web developer currently learning HTML, CSS and JavaScript step by step.
-I started from zero and now I can build simple websites with interactive features.
-My goal is to become a full-stack web developer and create real-world projects.
-</p>
+<h3>CSS</h3>
+<progress value="70" max="100"></progress>
+<p>70%</p>
 
-<hr>
+<h3>JavaScript</h3>
+<progress value="40" max="100"></progress>
+<p>40%</p>
 
-<h2>What I Have Learned 📚</h2>
-<ul>
-    <li>HTML page structure</li>
-    <li>CSS styling and design</li>
-    <li>Navigation bars</li>
-    <li>Buttons and interactions</li>
-    <li>JavaScript basics</li>
-    <li>Dark mode toggle</li>
-    <li>Counter app</li>
-    <li>To-Do list app</li>
-</ul>
+</div>
 
 <hr>
 
 <h2>My Projects 🚀</h2>
 
 <div class="project-card">
-    <h3>⚡ Counter App</h3>
-    <p>Built using JavaScript to increase and decrease numbers.</p>
+<h3>⚡ Counter App</h3>
+<p>Increase and decrease numbers using JavaScript.</p>
 </div>
 
 <div class="project-card">
-    <h3>📝 To-Do List</h3>
-    <p>Add, complete and delete tasks dynamically.</p>
+<h3>📝 To-Do List</h3>
+<p>Add and remove tasks dynamically.</p>
 </div>
 
 <div class="project-card">
-    <h3>🎮 Rock Paper Scissors</h3>
-    <p>Play against the computer using random choices.</p>
+<h3>🎮 Rock Paper Scissors</h3>
+<p>Play against computer using random choices.</p>
 </div>
 
 <div class="project-card">
-    <h3>🌙 Dark Mode</h3>
-    <p>Switch between light and dark themes instantly.</p>
+<h3>🌙 Dark Mode</h3>
+<p>Switch website theme instantly.</p>
 </div>
 
 <hr>
-
-<h2>Achievements 🏆</h2>
-
-<div class="project-card">
-    <h3>🌍 First Website Published</h3>
-    <p>Successfully deployed DeadPixelLab on GitHub Pages.</p>
-</div>
-
-<div class="project-card">
-    <h3>⚡ JavaScript Beginner</h3>
-    <p>Built interactive features like Counter, To-Do List and Games.</p>
-</div>
-
-<div class="project-card">
-    <h3>🚀 Continuous Learning</h3>
-    <p>Learning web development step by step every day.</p>
-</div>
-
-<hr>
-    <hr>
-
-<h2>Skills ⚡</h2>
-
-<div class="project-card">
-    <h3>HTML</h3>
-    <progress value="80" max="100"></progress>
-    <p>80%</p>
-
-    <h3>CSS</h3>
-    <progress value="70" max="100"></progress>
-    <p>70%</p>
-
-    <h3>JavaScript</h3>
-    <progress value="40" max="100"></progress>
-    <p>40%</p>
-</div>
-
-<hr>
-<h2>Future Goals 🚀</h2>
-<ul>
-    <li>Learn advanced JavaScript</li>
-    <li>Build responsive websites</li>
-    <li>Create portfolio projects</li>
-    <li>Deploy websites online</li>
-    <li>Learn React and backend development</li>
-</ul>
-
-<hr>
-<hr>
-
-<h2>Contact Form 📩</h2>
-
-<input type="text" id="name" placeholder="Your Name">
-
-<br><br>
-
-<input type="email" id="email" placeholder="Your Email">
-
-<br><br>
-
-<textarea id="message" placeholder="Your Message" rows="5" cols="30"></textarea>
-
-<br><br>
-
-<button onclick="sendMessage()">Send Message 🚀</button>
-
-<h3 id="status"></h3>
-
-<hr>
-    <hr>
 
 <h2>Live Clock 🕒</h2>
 
 <h3 id="clock">Loading...</h3>
 
 <hr>
-<h2>Contact 📞</h2>
-<p>Phone: COMING SOON</p>
-<p>Email: COMING SOON</p>
+
+<h2>Contact Form 📩</h2>
+
+<input
+type="text"
+id="name"
+placeholder="Your Name">
+
+<br>
+    <br>
+
+<input
+type="email"
+id="email"
+placeholder="Your Email">
+
+<br><br>
+
+<textarea
+id="message"
+rows="5"
+cols="30"
+placeholder="Your Message">
+</textarea>
+
+<br>
+    <br>
+    
+
+<button onclick="sendMessage()">
+Send Message 🚀
+</button>
+
+<h3 id="status"></h3>
+
+<hr><h2>Future Goals 🚀</h2>
+
+<ul>
+<li>Learn Advanced JavaScript</li>
+<li>Build Responsive Websites</li>
+<li>Learn React</li>
+<li>Learn Backend Development</li>
+<li>Become Full Stack Developer</li>
+</ul>
 
 <hr>
 
 <p>Made with ❤️ by DeadPixelLab 💀</p>
 
 <script>
+
 let count = 0;
 
 function increase() {
-    count++;
-    document.getElementById("count").innerText = count;
+count++;
+document.getElementById("count").innerText = count;
 }
 
 function decrease() {
-    count--;
-    document.getElementById("count").innerText = count;
+count--;
+document.getElementById("count").innerText = count;
 }
 
 function addTask() {
 
-    let task = document.getElementById("taskInput").value;
+let task =
+document.getElementById("taskInput").value;
 
-    if (task === "") {
-        alert("Please enter a task!");
-        return;
-    }
+if(task === "") {
+alert("Enter a task");
+return;
+}
 
-    let li = document.createElement("li");
+let li =
+document.createElement("li");
 
-    li.innerHTML =
-        '<span onclick="this.classList.toggle(\'completed\')">' +
-        task +
-        '</span> ' +
-        '<button onclick="this.parentElement.remove()">❌</button>';
+li.innerHTML =
+task +
+' <button onclick="this.parentElement.remove()">❌</button>';
 
-    document.getElementById("taskList").appendChild(li);
+document.getElementById("taskList")
+.appendChild(li);
 
-    document.getElementById("taskInput").value = "";
+document.getElementById("taskInput")
+.value = "";
 }
 
 function toggleMode() {
-    document.body.classList.toggle("dark-mode");
-}
-
-function sayHi() {
-    alert("DeadPixelLab JS started 💀🔥");
-}
-
-function goTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+document.body.classList.toggle("dark-mode");
 }
 
 function play(userChoice) {
 
-    let choices = ["rock", "paper", "scissors"];
+let choices =
+["rock","paper","scissors"];
 
-    let computerChoice =
-        choices[Math.floor(Math.random() * 3)];
+let computerChoice =
+choices[Math.floor(Math.random()*3)];
 
-    if (userChoice === computerChoice) {
+if(userChoice === computerChoice){
 
-        document.getElementById("result").innerText =
-        "🤝 Draw! Computer chose " + computerChoice;
+document.getElementById("result")
+.innerText =
+"🤝 Draw!";
 
-    } else if (
-        (userChoice === "rock" && computerChoice === "scissors") ||
-        (userChoice === "paper" && computerChoice === "rock") ||
-        (userChoice === "scissors" && computerChoice === "paper")
-    ) {
-
-        document.getElementById("result").innerText =
-        "🎉 You Win! Computer chose " + computerChoice;
-
-    } else {
-
-        document.getElementById("result").innerText =
-        "😈 Computer Wins! Computer chose " + computerChoice;
-    }
 }
 
-function sendMessage() {
+else if(
 
-    let name =
-        document.getElementById("name").value;
+(userChoice==="rock" && computerChoice==="scissors") ||
+(userChoice==="paper" && computerChoice==="rock") ||
+(userChoice==="scissors" && computerChoice==="paper")
 
-    let email =
-        document.getElementById("email").value;
+){
 
-    let message =
-        document.getElementById("message").value;
+document.getElementById("result")
+.innerText =
+"🎉 You Win!";
 
-    if (name === "" || email === "" || message === "") {
-
-        document.getElementById("status").innerText =
-        "❌ Please fill all fields";
-
-        return;
-    }
-
-    document.getElementById("status").innerText =
-    "✅ Message Sent Successfully!";
 }
 
-function updateClock() {
+else{
 
-    let now = new Date();
+document.getElementById("result")
+.innerText =
+"😈 Computer Wins!";
 
-    document.getElementById("clock").innerText =
-    now.toLocaleTimeString();
+}
 }
 
-setInterval(updateClock, 1000);
+function sendMessage(){
+
+let name =
+document.getElementById("name").value;
+
+let email =
+document.getElementById("email").value;
+
+let message =
+document.getElementById("message").value;
+
+if(name==="" || email==="" || message===""){
+
+document.getElementById("status")
+.innerText =
+"❌ Fill all fields";
+
+return;
+}
+
+document.getElementById("status")
+.innerText =
+"✅ Message Sent!";
+}
+
+function updateClock(){
+
+let now = new Date();
+
+document.getElementById("clock")
+.innerText =
+now.toLocaleTimeString();
+}
+
+setInterval(updateClock,1000);
 updateClock();
+
 </script>
 
 </body>
-
-</html>
+    </html>
