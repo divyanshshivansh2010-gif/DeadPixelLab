@@ -200,6 +200,13 @@ My goal is to become a full-stack web developer and create real-world projects.
 <h3 id="status"></h3>
 
 <hr>
+    <hr>
+
+<h2>Live Clock 🕒</h2>
+
+<h3 id="clock">Loading...</h3>
+
+<hr>
 <h2>Contact 📞</h2>
 <p>Phone: COMING SOON</p>
 <p>Email: COMING SOON</p>
@@ -314,7 +321,18 @@ function play(userChoice) {
 
     }
     function sendMessage() {
+function updateClock() {
 
+    let now = new Date();
+
+    document.getElementById("clock")
+    .innerText =
+    now.toLocaleTimeString();
+}
+
+setInterval(updateClock, 1000);
+
+updateClock();
     let name =
         document.getElementById("name").value;
 
