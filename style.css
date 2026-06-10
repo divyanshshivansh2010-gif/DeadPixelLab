@@ -112,3 +112,6 @@ input {
 .project-card:hover {
     transform: scale(1.03);
 }
+.hero-card p {
+    margin: 10px 0;
+}
