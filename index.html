@@ -216,7 +216,6 @@ My goal is to become a full-stack web developer and create real-world projects.
 <p>Made with ❤️ by DeadPixelLab 💀</p>
 
 <script>
-
 let count = 0;
 
 function increase() {
@@ -265,74 +264,37 @@ function goTop() {
         behavior: "smooth"
     });
 }
+
 function play(userChoice) {
 
-    let choices = [
-        "rock",
-        "paper",
-        "scissors"
-    ];
-
-    let randomIndex =
-        Math.floor(Math.random() * 3);
+    let choices = ["rock", "paper", "scissors"];
 
     let computerChoice =
-        choices[randomIndex];
+        choices[Math.floor(Math.random() * 3)];
 
     if (userChoice === computerChoice) {
 
-        document.getElementById("result")
-        .innerText =
-        "🤝 Draw! Computer chose " +
-        computerChoice;
+        document.getElementById("result").innerText =
+        "🤝 Draw! Computer chose " + computerChoice;
 
-    }
-
-    else if (
-        (userChoice === "rock" &&
-         computerChoice === "scissors")
-
-        ||
-
-        (userChoice === "paper" &&
-         computerChoice === "rock")
-
-        ||
-
-        (userChoice === "scissors" &&
-         computerChoice === "paper")
+    } else if (
+        (userChoice === "rock" && computerChoice === "scissors") ||
+        (userChoice === "paper" && computerChoice === "rock") ||
+        (userChoice === "scissors" && computerChoice === "paper")
     ) {
 
-        document.getElementById("result")
-        .innerText =
-        "🎉 You Win! Computer chose " +
-        computerChoice;
+        document.getElementById("result").innerText =
+        "🎉 You Win! Computer chose " + computerChoice;
 
+    } else {
+
+        document.getElementById("result").innerText =
+        "😈 Computer Wins! Computer chose " + computerChoice;
     }
-
-    else {
-
-        document.getElementById("result")
-        .innerText =
-        "😈 Computer Wins! Computer chose " +
-        computerChoice;
-
-    }
-
-    }
-    function sendMessage() {
-function updateClock() {
-
-    let now = new Date();
-
-    document.getElementById("clock")
-    .innerText =
-    now.toLocaleTimeString();
 }
 
-setInterval(updateClock, 1000);
+function sendMessage() {
 
-updateClock();
     let name =
         document.getElementById("name").value;
 
@@ -342,20 +304,28 @@ updateClock();
     let message =
         document.getElementById("message").value;
 
-    if(name === "" || email === "" || message === "") {
+    if (name === "" || email === "" || message === "") {
 
-        document.getElementById("status")
-        .innerText =
+        document.getElementById("status").innerText =
         "❌ Please fill all fields";
 
         return;
     }
 
-    document.getElementById("status")
-    .innerText =
+    document.getElementById("status").innerText =
     "✅ Message Sent Successfully!";
-
 }
+
+function updateClock() {
+
+    let now = new Date();
+
+    document.getElementById("clock").innerText =
+    now.toLocaleTimeString();
+}
+
+setInterval(updateClock, 1000);
+updateClock();
 </script>
 
 </body>
