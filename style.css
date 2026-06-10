@@ -238,3 +238,8 @@ input {
 .hero-card p {
     margin: 10px 0;
 }
+progress {
+    width: 80%;
+    height: 20px;
+    margin-bottom: 10px;
+    }
