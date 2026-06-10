@@ -1,11 +1,13 @@
 body {
-    background-color: #0f0f0f;
-    color: white;
+    background-color: white;
+    color: black;
     font-family: Arial;
     text-align: center;
     margin: 0;
+    padding: 15px;
+    max-width: 900px;
+    transition: 0.3s;
 }
-
 nav {
     background-color: #1a1a1a;
     padding: 15px;
@@ -41,12 +43,6 @@ ul {
 
 li {
     margin: 8px;
-}
-
-body {
-    background-color: white;
-    color: black;
-    transition: 0.3s;
 }
 
 /* DARK MODE */
@@ -89,4 +85,18 @@ input {
 .hero-card:hover {
     transform: scale(1.03);
     transition: 0.3s;
+}
+body {
+    max-width: 900px;
+    margin: auto;
+    padding: 15px;
+}
+
+button {
+    margin: 5px;
+}
+
+input {
+    width: 90%;
+    max-width: 400px;
 }
