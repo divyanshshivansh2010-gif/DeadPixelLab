@@ -179,7 +179,27 @@ My goal is to become a full-stack web developer and create real-world projects.
 </ul>
 
 <hr>
+<hr>
 
+<h2>Contact Form 📩</h2>
+
+<input type="text" id="name" placeholder="Your Name">
+
+<br><br>
+
+<input type="email" id="email" placeholder="Your Email">
+
+<br><br>
+
+<textarea id="message" placeholder="Your Message" rows="5" cols="30"></textarea>
+
+<br><br>
+
+<button onclick="sendMessage()">Send Message 🚀</button>
+
+<h3 id="status"></h3>
+
+<hr>
 <h2>Contact 📞</h2>
 <p>Phone: COMING SOON</p>
 <p>Email: COMING SOON</p>
@@ -293,6 +313,31 @@ function play(userChoice) {
     }
 
     }
+    function sendMessage() {
+
+    let name =
+        document.getElementById("name").value;
+
+    let email =
+        document.getElementById("email").value;
+
+    let message =
+        document.getElementById("message").value;
+
+    if(name === "" || email === "" || message === "") {
+
+        document.getElementById("status")
+        .innerText =
+        "❌ Please fill all fields";
+
+        return;
+    }
+
+    document.getElementById("status")
+    .innerText =
+    "✅ Message Sent Successfully!";
+
+}
 </script>
 
 </body>
