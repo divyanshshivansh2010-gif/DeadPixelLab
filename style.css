@@ -500,4 +500,204 @@ font-weight:bold;
 letter-spacing:1px;
   }
 
+.project-card:hover,
+.stat-card:hover,
+.app-card:hover,
+.skill-card:hover,
+.clock-card:hover,
+.contact-card:hover,
+.goal-card:hover{
 
+transform:
+translateY(-10px)
+scale(1.02);
+
+}
+/* LOADING SCREEN */
+
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#050816;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+#loader h1{
+color:#00ffff;
+font-size:40px;
+text-shadow:0 0 20px #00ffff;
+margin-bottom:20px;
+}
+
+#loading-text{
+color:white;
+margin-bottom:20px;
+}
+
+.loading-bar{
+width:250px;
+height:12px;
+background:#111827;
+border-radius:20px;
+overflow:hidden;
+}
+
+.loading-fill{
+height:100%;
+width:0;
+background:#00ffff;
+animation:loadBar 3s linear forwards;
+}
+
+@keyframes loadBar{
+
+from{
+width:0;
+}
+
+to{
+width:100%;
+}
+
+}
+.status-line{
+margin-top:15px;
+color:#00ffff;
+font-weight:bold;
+text-shadow:0 0 10px #00ffff;
+}
+body{
+cursor:crosshair;
+}
+.hero-circle{
+  .hero-circle img{
+
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+border-radius:50%;
+
+}
+animation:
+float 4s ease-in-out infinite,
+pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+0%{
+box-shadow:0 0 20px #00ffff;
+}
+
+50%{
+box-shadow:
+0 0 40px #00ffff,
+0 0 80px #00ffff;
+}
+
+100%{
+box-shadow:0 0 20px #00ffff;
+}
+
+}
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+.blink{
+animation:blink 1s infinite;
+}
+
+@keyframes blink{
+
+50%{
+opacity:0;
+}
+
+}
+#topBtn{
+position:fixed;
+bottom:20px;
+right:20px;
+width:55px;
+height:55px;
+border-radius:50%;
+border:none;
+font-size:24px;
+font-weight:bold;
+background:#00ffff;
+color:#050816;
+cursor:pointer;
+display:none;
+
+box-shadow:
+0 0 15px #00ffff,
+0 0 30px #00ffff;
+}
+
+#topBtn:hover{
+transform:scale(1.1);
+}
+.social-btn{
+display:inline-block;
+margin-top:15px;
+padding:14px 28px;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+
+background:#111827;
+color:#00ffff;
+
+border:1px solid #00ffff;
+
+box-shadow:
+0 0 15px #00ffff44;
+}
+
+.social-btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+0 0 20px #00ffff,
+0 0 40px #00ffff66;
+
+}
+footer{
+
+margin-top:100px;
+
+padding:40px 20px;
+
+text-align:center;
+
+border-top:1px solid #00ffff33;
+
+background:#070d1a;
+
+}
+
+footer h3{
+
+color:#00ffff;
+
+text-shadow:
+0 0 15px #00ffff;
+
+  }
