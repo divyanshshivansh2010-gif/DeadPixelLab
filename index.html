@@ -1,1 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeadPixelLab 💀</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<button id="topBtn" onclick="goTop()">
+⬆
+</button>
+<body>
+  
+</div>
+
+<nav class="navbar">
+
+<div class="logo">
+💀 DeadPixelLab
+</div>
+
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#stats">Stats</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section id="home" class="hero">
+<p class="status-line">
+🟢 Status: Learning & Building Every Day
+</p>
+<div class="hero-left">
+
+<h1>
+DeadPixelLab<span class="blink">_</span>
+</h1>
+
+<h2 id="typing"></h2>
+
+<p>
+Building futuristic websites with HTML, CSS and JavaScript.
+</p>
+
+<button class="hero-btn"
+onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+Explore Projects 🚀
+</button>
+
+<br><br>
+
+<a href="https://github.com/divyanshshivansh2010-gif"
+target="_blank"
+class="social-btn">
+💻 GitHub Profile
+</a>
+
+<br><br>
+
+<button class="social-btn"
+onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+
+📧 Contact Me
+
+</button>
+
+</div>
+<div class="hero-right">
+
+<div class="hero-circle">
+
+<img src="logo.png" alt="DeadPixelLab Logo">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="stats">
+
+<h2 class="section-title">
+Developer Stats
+</h2>
+
+<div class="stats-grid">
+
+<div class="stat-card">
+<h3>5+</h3>
+<p>Projects</p>
+</div>
+
+<div class="stat-card">
+<h3>HTML</h3>
+<p>Frontend</p>
+</div>
+
+<div class="stat-card">
+<h3>CSS</h3>
+<p>Styling</p>
+</div>
+
+<div class="stat-card">
+<h3>JS</h3>
+<p>Logic</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills" class="reveal">
+
+<h2 class="section-title">
+Skills ⚡
+</h2>
+
+<div class="skill-card">
+
+<h3>HTML</h3>
+<progress value="80" max="100"></progress>
+
+<h3>CSS</h3>
+<progress value="70" max="100"></progress>
+
+<h3>JavaScript</h3>
+<progress value="40" max="100"></progress>
+
+</div>
+
+</section>
+
+<section id="projects" class="reveal">
+
+<h2 class="section-title">
+Projects 🚀
+</h2>
+
+<div class="project-grid">
+
+<div class="project-card">
+<h3>⚡ Counter App</h3>
+<p>Increase and decrease numbers.</p>
+</div>
+
+<div class="project-card">
+<h3>📝 To Do List</h3>
+<p>Add and remove tasks.</p>
+</div>
+
+<div class="project-card">
+<h3>🎮 Rock Paper Scissors</h3>
+<p>Play against computer.</p>
+</div>
+
+<div class="project-card">
+<h3>🌙 Dark Mode</h3>
+<p>Switch website theme instantly.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="apps reveal">
+
+<h2 class="section-title">
+Interactive Zone 🎮
+</h2>
+
+<div class="app-card">
+
+<h3>Counter App ⚡</h3>
+
+<h1 id="count">0</h1>
+
+<button onclick="increase()">+</button>
+
+<button onclick="decrease()">-</button>
+
+</div>
+
+<div class="app-card">
+
+<h3>Rock Paper Scissors 🎮</h3>
+
+<button onclick="play('rock')">
+🪨
+</button>
+
+<button onclick="play('paper')">
+📄
+</button>
+
+<button onclick="play('scissors')">
+✂️
