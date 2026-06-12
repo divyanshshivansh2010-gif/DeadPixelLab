@@ -198,3 +198,287 @@ Interactive Zone 🎮
 
 <button onclick="play('scissors')">
 ✂️
+</button>
+
+<h3 id="result">
+Choose One
+</h3>
+
+</div>
+
+<div class="app-card">
+
+<h3>To Do List 📝</h3>
+
+<input
+type="text"
+id="taskInput"
+placeholder="Enter Task">
+
+<button onclick="addTask()">
+Add
+</button>
+
+<ul id="taskList"></ul>
+
+</div>
+
+</section>
+
+<section id="clock-section">
+
+<h2 class="section-title">
+Live Clock 🕒
+</h2>
+
+<div class="clock-card">
+
+<h1 id="clock">
+Loading...
+</h1>
+
+</div>
+
+</section>
+
+<section id="contact" class="reveal">
+
+<h2 class="section-title">
+Contact Me 📩
+</h2>
+
+<div class="contact-card">
+
+<input
+type="text"
+id="name"
+placeholder="Your Name">
+
+<br><br>
+
+<input
+type="email"
+id="email"
+placeholder="Your Email">
+
+<br><br>
+
+<textarea
+id="message"
+placeholder="Your Message"
+rows="5">
+</textarea>
+
+<br><br>
+
+<button onclick="sendMessage()">
+Send Message 🚀
+</button>
+
+<h3 id="status"></h3>
+
+</div>
+
+</section>
+
+<section id="goals" class="reveal">
+
+<h2 class="section-title">
+Future Goals 🚀
+</h2>
+
+<div class="goal-card">
+
+<ul>
+
+<li>Learn Advanced JavaScript</li>
+
+<li>Master Responsive Design</li>
+
+<li>Learn React</li>
+
+<li>Learn Backend Development</li>
+
+<li>Become Full Stack Developer</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<script>
+
+let count = 0;
+
+function increase() {
+count++;
+document.getElementById("count").innerText = count;
+}
+
+function decrease() {
+count--;
+document.getElementById("count").innerText = count;
+}
+
+function addTask() {
+
+let task =
+document.getElementById("taskInput").value;
+
+if(task === "") return;
+
+let li =
+document.createElement("li");
+
+li.innerHTML =
+task +
+' <button onclick="this.parentElement.remove()">❌</button>';
+
+document.getElementById("taskList")
+.appendChild(li);
+
+document.getElementById("taskInput")
+.value = "";
+}
+
+function play(userChoice){
+
+let choices =
+["rock","paper","scissors"];
+
+let computerChoice =
+choices[Math.floor(Math.random()*3)];
+
+if(userChoice===computerChoice){
+
+document.getElementById("result")
+.innerText =
+"🤝 Draw";
+
+}
+
+else if(
+
+(userChoice==="rock" && computerChoice==="scissors") ||
+
+(userChoice==="paper" && computerChoice==="rock") ||
+
+(userChoice==="scissors" && computerChoice==="paper")
+
+){
+
+document.getElementById("result")
+.innerText =
+"🎉 You Win";
+
+}
+
+else{
+
+document.getElementById("result")
+.innerText =
+"😈 Computer Wins";
+
+}
+
+}
+
+function sendMessage(){
+
+let name =
+document.getElementById("name").value;
+
+let email =
+document.getElementById("email").value;
+
+let message =
+document.getElementById("message").value;
+
+if(name==="" || email==="" || message===""){
+
+document.getElementById("status")
+.innerText =
+"❌ Fill all fields";
+
+return;
+
+}
+
+document.getElementById("status")
+.innerText =
+"✅ Message Sent";
+
+}
+
+function updateClock(){
+
+let now =
+new Date();
+
+document.getElementById("clock")
+.innerText =
+now.toLocaleTimeString();
+
+}
+
+setInterval(updateClock,1000);
+
+updateClock();
+const reveals =
+document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll",()=>{
+
+reveals.forEach((item)=>{
+
+const top =
+item.getBoundingClientRect().top;
+
+if(top < window.innerHeight - 100){
+
+item.classList.add("active");
+
+}
+
+});
+
+});
+window.addEventListener("scroll", function(){
+
+let btn =
+document.getElementById("topBtn");
+
+if(window.scrollY > 300){
+
+btn.style.display = "block";
+
+}
+else{
+
+btn.style.display = "none";
+
+}
+
+});
+</script>
+
+</body>
+</html>
+<footer>
+
+<h3>💀 DeadPixelLab</h3>
+
+<p>
+Building futuristic websites with code.
+</p>
+
+<p>
+HTML • CSS • JavaScript
+</p>
+
+<p>
+© 2026 DeadPixelLab
+</p>
+
+  </footer>
